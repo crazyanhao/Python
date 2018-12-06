@@ -88,6 +88,6 @@ if __name__ == '__main__':
     url = 'https://fe-api.zhaopin.com/c/i/sou?pageSize=60&cityId=653&workExperience=-1&education=-1&companyType=-1&employmentType=-1&jobWelfareTag=-1&kw=' + key + '&kt=3&lastUrlQuery=%7B%22pageSize%22:%2260%22,%22jl%22:%22489%22,%22kw%22:%22%E5%A4%A7%E6%95%B0%E6%8D%AE%22,%22kt%22:%223%22%7D'
     infoUrl(url)
 
-    urls = ['https://fe-api.zhaopin.com/c/i/sou?start={}&pageSize=60&cityId=653&kw='.format(i*60)+key+'&kt=3&lastUrlQuery=%7B%22p%22:{},%22pageSize%22:%2260%22,%22jl%22:%22489%22,%22kw%22:%22java%22,%22kt%22:%223%22%7D'.format(i) for i in range(1,1)]
+    urls = ['https://fe-api.zhaopin.com/c/i/sou?start={}&pageSize=60&cityId=653&kw='.format(i*60)+key+'&kt=3&lastUrlQuery=%7B%22p%22:{},%22pageSize%22:%2260%22,%22jl%22:%22489%22,%22kw%22:%22java%22,%22kt%22:%223%22%7D'.format(i) for i in range(1,50)]
     for url in urls:
         infoUrl(url) 
